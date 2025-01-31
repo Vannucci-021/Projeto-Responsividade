@@ -1,0 +1,71 @@
+/* FONTE USADA */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CONFIG BÁSICA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root {
+    --cor-geral: #02A28F;
+    --fonte-padrão: "Montserrat", serif;
+}
+
+/* HEADER */
+header {
+    background-color: var(--cor-geral);
+}
+
+    header h1 {
+        font-family: var(--fonte-padrão);
+        font-weight: 700;
+        font-size: 2.25rem;
+        color: white;
+        align-items: center;
+        padding: .8rem 0 .8rem 9.75rem;
+        line-height: 43.88px;
+    }
+
+/* CONFIG COMPLETA DO MAIN */
+main {
+    margin: 3% 5% ;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--cor-geral);
+}
+
+    footer p {
+        font-family: var(--fonte-padrão);
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: white;
+        text-align: center;
+        align-items: center;
+        padding: 1.2rem;
+    }
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.articleContainer {
+    margin-top: .5rem;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.281);
+}
+
+    .articleContainer h3 {
+        background-color: var(--cor-geral);
+        padding: 10px;
+
+    }
+
+#containerImgPrincipal img {
+    width: 50vw;
+}
