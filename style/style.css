@@ -51,6 +51,7 @@ footer {
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
 }
 
 .primeiraColuna {
@@ -85,10 +86,8 @@ footer {
 .segundaColuna {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-left: 2rem;
     width: 82%;
-    height: 46%;
 }
 
 .categorias {
@@ -135,15 +134,7 @@ footer {
     #imgColuna2 {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 85%;
         margin-top: 1rem;
-    }
-
-    #articleContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
     #titleArticle {
@@ -151,7 +142,7 @@ footer {
         padding: 1rem;
         border: 0;
         border-radius: 10px;
-        margin-top: 3.2rem;
+        margin-top: 5.5rem;
     }
 
     #titleArticle h3 {
@@ -161,12 +152,63 @@ footer {
     }
 
     #textArticle {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
-@media only screen and (max-width: 1375px) {
+@media only screen and (max-width: 1230px) {
+    main {
+        margin: 2rem;
+    }
+
     .container {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .segundaColuna {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header h1 {
+        padding-left: 0;
+        font-size: 1.5rem;
+    }
+    main {
+        margin: 1rem;
+    }
+    .container {
+        width: 100%;
+    }
+    #postsRecentes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
+    .navPosts h2 {
+        font-size: 1.2rem;
+    }
+    .navPosts a {
+        font-size: 0.9rem;
+    }
+    footer p {
+        font-size: 0.7rem;
+    }
+
+    #textAndImg-coluna2 {
+        margin-top: 2rem;
+    }
+
+    #articleContainer{
+        margin: 0;
     }
 }
